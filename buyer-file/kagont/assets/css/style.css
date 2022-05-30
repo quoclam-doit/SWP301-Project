@@ -5667,9 +5667,8 @@ select {
 /* avatar */
 
 .background1 {
-  width: 50%;
-  height: 50%;
-  object-position: 0px 0;
+  width: 60%;
+  height: 30%;
 }
 
 .padding1 {
@@ -5711,6 +5710,7 @@ select {
 
 .card-block {
   padding: 1.25rem;
+  padding-top: 50px;
 }
 
 .m-b-25 {
@@ -5737,9 +5737,7 @@ p {
 }
 }
 
-.card-block {
-  padding: 1.25rem;
-}
+
 
 .b-b-default {
   border-bottom: 1px solid #e0e0e0;
@@ -5808,6 +5806,7 @@ p {
 
 .fix {
   width: 100%;
+
 }
 .mau {
   color: #af5b5b;
