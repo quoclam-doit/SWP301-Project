@@ -237,3 +237,22 @@ select option {
 .center{
   font-weight: bold;
 }
+
+.Information{
+  position: relative;
+  display: inline-block;
+  padding: 20px 80px;
+  color: #ededed;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border: 1px solid rgb(255, 145, 0);
+  background-color: rgb(255, 166, 0);
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-left: 10px;
+}
