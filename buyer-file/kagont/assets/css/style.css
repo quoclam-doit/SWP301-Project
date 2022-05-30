@@ -5721,7 +5721,11 @@ select {
   border-radius: 1000px;
 }
 
-
+/* icon avatar */
+.icofont-instagram {
+  
+}
+/*  */
 
 h6 {
   font-size: 14px;
@@ -5810,7 +5814,8 @@ p {
 }
 .mau {
   color: #af5b5b;
-  font-size: 24px;
+  font-size: 23px;
+  
 }
 .canle {
   margin: 0 auto;
@@ -5920,4 +5925,12 @@ p {
   padding: 8px 30px 8px 30px;
   font-size: 20px;
 
+}
+.dex {
+  border: x;
+}
+.form-control {
+  width: 400px;
+  text-align: justify;
+  font-size: 20px;
 }
