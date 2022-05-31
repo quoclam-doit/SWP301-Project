@@ -5821,7 +5821,7 @@ p {
   margin: 0 auto;
 }
 .font {
-  font-family: "Playfair";
+  font-family: "Vollkorn";
   font-size: 20px;
 }
 
@@ -5933,4 +5933,18 @@ p {
   width: 400px;
   text-align: justify;
   font-size: 20px;
+  font-family: "Vollkorn";
+  font-weight: 700;
+}
+
+/* chiều dài profile */
+.col-sm-3 {
+  width: 30%;
+}
+.col-sm-9 {
+  width: 70%;
+}
+
+.color {
+  color: black;
 }
