@@ -919,26 +919,22 @@
 					<div class="event-tabs mb-3 mr-3">
 						<ul class="nav nav-tabs" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#All" role="tab"
-									aria-selected="true">
+								<a class="nav-link active" data-toggle="tab" href="#All" role="tab" aria-selected="true">
 									All
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#All" role="tab"
-									aria-selected="true">
+								<a class="nav-link" data-toggle="tab" href="#Pending" role="tab" aria-selected="false">
 									Pending
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#All" role="tab"
-									aria-selected="true">
-									Approved
+								<a class="nav-link" data-toggle="tab" href="#Approve" role="tab" aria-selected="false">
+									Approve
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#All" role="tab"
-									aria-selected="true">
+								<a class="nav-link" data-toggle="tab" href="#Decline" role="tab" aria-selected="false">
 									Decline
 								</a>
 							</li>
@@ -963,101 +959,234 @@
 								<div class="table-responsive">
 									<table id="example2" class="table card-table display dataTablesCard">
 										<thead>
-											<tr>
+											<tr class="text-center">
 												<th>EventID</th>
+												<th>OrgID</th>
 												<th>Date</th>
 												<th>Take Place Date</th>
+												<th>Event Type</th>
 												<th>Event Name</th>
+												<th>Content</th>
+												<th>Speaker</th>
+												<th>Summary</th>
 												<th>Location</th>
 												<th>ImgURL</th>
 												<th>Status</th>
+												<th>Sta.TyID</th>
 												<th>View Detail</th>
+												<th>Administrators</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center">Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center" >Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center">Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center">Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center">Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											<tr>
 												<td>#0012451</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td>04/08/2020<br>12:34 AM</td>
-												<td><span class="text-nowrap">Fotomarathon<br> (Photoshoot Drama)</span>
+												<td>#0012451</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">04/08/2020<br>12:34 AM</td>
+												<td class="text-center">Workshop</td>
+												<td class="text-center">Fotomarathon<br>(Photoshoot Drama)</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông, cùng
+														nhau gắn kết và mang lại những giá trị cho cộng đồng trẻ</p>	
+												</td>
+												<td class="text-center">Lý Quốc Lâm</td>
+												<td>
+													<p class="mb-0 d-none d-xl-inline-block" style="width: 500px">Câu lạc bộ truyền thông với
+														những người trẻ có niềm đam mê trong lĩnh vực truyền thông...</p>	
 												</td>
 												
-												<td>Hall B, FPT HCM</td>
-												<td><a href="#">Click</a></td>
-												<td><span class="text-primary">Active</span></td>
-												
-												<td><a href="javascript:void(0)"
+												<td class="text-center">Hall B<br>FPTU HCM</td>
+												<td class="text-center"><a href="#">Click</a></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><span class="text-primary">Active</span></td>
+												<td class="text-center"><a href="javascript:void(0)"
 														class="btn btn-primary btn-sm light">View</a></td>
+												<td style="padding-left: 20px">
+													<div class="d-flex align-items-center">
+																<a href="javascript:void(0)" class="mr-4">
+																	<i class="las la-pencil-alt scale-2"></i>
+																</a>
+																<a href="javascript:void(0)">
+																	<i class="las la-trash-alt scale-2 text-danger"></i>
+																</a>
+													</div>
+												</td>
 											</tr>
 											
 										</tbody>
