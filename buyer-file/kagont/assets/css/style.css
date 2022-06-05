@@ -5719,6 +5719,7 @@ select {
 
 .img-radius {
   border-radius: 1000px;
+  margin: -78px 0px 0px 0px;
 }
 
 /* icon avatar */
@@ -6144,12 +6145,12 @@ html {
 	min-width: 400px;
 }
 .col-lg-6 {
-  margin: 0px 0px 0px 0px;
+  margin: -60px 0px 0px 0px;
 }
 /* nút follow */
 .follow{
-
   border-radius: 15px;
   padding: 0px 20px 0px 20px;
   height: 35px;
+  margin: 25px 0px 0px 0px;
  }
