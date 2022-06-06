@@ -6144,9 +6144,7 @@ html {
   margin: 35px -134px -46px -1px;
 	min-width: 400px;
 }
-.col-lg-6 {
-  margin: -60px 0px 0px 0px;
-}
+
 /* nút follow */
 .follow{
   border-radius: 15px;
@@ -6154,3 +6152,9 @@ html {
   height: 35px;
   margin: 25px 0px 0px 0px;
  }
+
+ .inside {
+   margin: -60px 0px 0px 0px;
+ }
+
+ 
