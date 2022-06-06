@@ -453,7 +453,7 @@ a:active {
 }
 
 img {
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
 }
 
@@ -6156,5 +6156,25 @@ html {
  .inside {
    margin: -60px 0px 0px 0px;
  }
-
+.follow1 {
+  
+}
+.primary2 {
+  display: inline-block;
+  line-height: 56px;
+  padding: 0px 159px;
+  background: #ec4067;
+  color: #fff;
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-size: 20px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 0 currentColor;
+}
  
