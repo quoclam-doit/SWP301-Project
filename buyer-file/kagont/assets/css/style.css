@@ -7750,7 +7750,7 @@ html {
 /*------------------------------------*\
     #Hero  
 \*------------------------------------*/
-.header-transparent+.slider {
+.header-transparent.slider {
   margin-top: -100px;
 }
 
@@ -7900,68 +7900,19 @@ html {
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
-  .slider .slide--headline {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-
-  .slider .slide--bio {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 0 10px;
-  }
-
-  .slider,
-  .slider .slide--item {
-    height: 600px;
-  }
-
-  .rs-arrows.tparrows.ares {
+  .slider {
     display: none;
   }
-
-  .slide-action .btn {
-    width: 120px;
-    font-size: 12px;
-  }
-
-  .slide-action .btn.btn--lg {
-    width: 190px;
-    font-size: 12px;
-  }
-
-  .slider-navs .owl-controls .owl-nav [class*=owl-] {
-    width: 30px !important;
-  }
-
-  .slide-action .btn--slide-wide {
-    width: 220px;
-  }
-
-  .slider-portfolio .slide--container {
-    padding: 30px 20px;
-  }
-
-  .slider-portfolio .slide--headline {
-    font-size: 25px !important;
-  }
-
-  .slide-action .btn.btn--icon {
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px;
-  }
-
-  .hesperiden.tparrows,
-  .slider .tparrows:before,
-  .divider--slider-right,
-  .divider--slider-left {
-    display: none;
+  .about-section .about-image {
+    margin-top: 100px;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-section .about-image {
+    margin-top: 150px;
+  }
 
   .slider,
   .slider .slide--item {
@@ -8001,6 +7952,9 @@ html {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-section .about-image {
+    margin-top: 150px;
+  }
 
   .slider,
   .slider .slide--item {
@@ -8028,6 +7982,6 @@ element.style {
 @media screen and(max-width: 740px) {
   .slider {
     display: none;
-    
+
   }
 }
