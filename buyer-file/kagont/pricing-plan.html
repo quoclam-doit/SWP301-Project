@@ -38,118 +38,131 @@
                 <div class="header-wrapper">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/logo/01.png" alt="logo">
+                            <img src="assets/images/resize-logo/TEXT-(153x50)1.png" alt="logo">
                         </a>
                     </div>
                     <div class="menu-area">
                         <ul class="menu">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.html"><i class="fa fa-home"></i>Home</a>
                             </li>
 
                             <li>
-                                <a href="#0">Features</a>
-                                <ul class="submenu">
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="login.html">Log In</a></li>
-                                    <li><a href="registration.html">Sign Up</a></li>
-                                    <li><a class="active" href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="club.html">Shop</a></li>
-                                    <li><a href="club-details.html">Shop Single</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="coming-soon.html">Coming-soon</a></li>
-
-                                </ul>
+                                <a href="club.html"><i class="fa fa-cube"></i> Club</a>
                             </li>
                             <li>
-                                <a href="#0">Speakers</a>
-                                <ul class="submenu">
-                                    <li><a href="event.html">All Speakers</a></li>
+                                <a href="event.html"><i class="fa fa-calendar-check"></i>Event</a>
+                                <!-- <ul class="submenu">
+                                    <li><a class="active" href="event.html">All Speakers</a></li>
                                     <li><a href="event-details.html">Speaker Details</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>
-                                <a href="#0">Blog</a>
+                                <a href="#0"><i class="icofont-institution"></i>Features</a>
                                 <ul class="submenu">
+                                    <li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
+                                    <li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="blog.html"><i class="fa fa-newspaper"></i>Blog</a>
+                                <!-- <ul class="submenu">
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="blog-single.html">Blog Single</a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
+							<li>
+                                <a href="#0	"><i class="fas fa-user"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
+                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
-                        <div class="cart-ticket">
-                            <div class="cart-icon">
-                                <a href="#">
-                                    <i class="icofont-bag"></i>
-                                    <span>3</span>
-                                </a>
+                        <!-- partial:index.partial.html -->
+                        <div ng-app="demoApp" class="dropdowns">
+                            <div class="wrapper" ng-controller="demoController">
+                                <div class="nav-bar">
+                                    <ul>
+                                        <li>
+                                            <div class="dropdowns-wrapper">
+                                                <div class="dropdown-container">
+                                                    <div class="notifications dropdown dd-trigger"
+                                                        ng-click="showNotifications($event)">
+                                                        <span class="count animated"
+                                                            id="notifications-count">{{awaitingNotifications}}</span>
+                                                        <span class="fa fa-bell-o"></span>
+                                                    </div>
+                                                    <div class="dropdown-menu animated" id="notification-dropdown">
+                                                        <div class="dropdown-header">
+                                                            <span class="triangle"></span>
+                                                            <span class="heading">Notifications</span>
+                                                            <span class="count"
+                                                                id="dd-notifications-count">{{newNotifications.length}}</span>
+                                                        </div>
+                                                        <div class="dropdown-body">
+                                                            <div class="notification new"
+                                                                ng-repeat="notification in newNotifications.slice().reverse() track by notification.timestamp">
+                                                                <div class="notification-image-wrapper">
+                                                                    <div class="notification-image">
+                                                                        <img src="{{notification.user.imageUrl}}" alt=""
+                                                                            width="32">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notification-text">
+                                                                    <span
+                                                                        class="highlight">{{notification.user.name}}</span>
+                                                                    {{notification.action}} {{notification.target}}
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification"
+                                                                ng-repeat="notification in readNotifications.slice().reverse() track by $index">
+                                                                <div class="notification-image-wrapper">
+                                                                    <div class="notification-image">
+                                                                        <img src="{{notification.user.imageUrl}}" alt=""
+                                                                            width="32">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notification-text">
+                                                                    <span
+                                                                        class="highlight">{{notification.user.name}}</span>
+                                                                    {{notification.action}} {{notification.target}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
 
-                                <div class="cart-content">
-                                    <ul class="cart-list">
-                                        <li class="cart-item">
-                                            <div class="cart-inner">
-                                                <div class="cart-thumb">
-                                                    <img src="assets/images/product/menu_cart_01.jpg" alt="product">
-                                                </div>
-                                                <div class="cart-details">
-                                                    <h6><a href="#">Product Text Here</a></h6>
-                                                    <p>Quantity: 1 <span>$56</span></p>
-                                                    <div class="close-btn">
-                                                        <a href="#"><i class="icofont-close"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <div class="cart-inner">
-                                                <div class="cart-thumb">
-                                                    <img src="assets/images/product/menu_cart_02.jpg" alt="product">
-                                                </div>
-                                                <div class="cart-details">
-                                                    <h6><a href="#">Product Text Here</a></h6>
-                                                    <p>Quantity: 1 <span>$56</span></p>
-                                                    <div class="close-btn">
-                                                        <a href="#"><i class="icofont-close"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart-item">
-                                            <div class="cart-inner">
-                                                <div class="cart-thumb">
-                                                    <img src="assets/images/product/menu_cart_03.jpg" alt="product">
-                                                </div>
-                                                <div class="cart-details">
-                                                    <h6><a href="#">Product Text Here</a></h6>
-                                                    <p>Quantity: 1 <span>$56</span></p>
-                                                    <div class="close-btn">
-                                                        <a href="#"><i class="icofont-close"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
                                     </ul>
-                                    <a href="#" class="lab-btn">
-                                        Checkout
-                                    </a>
+									
                                 </div>
                             </div>
-                            <a href="pricing-plan.html" class="ticket-btn lab-btn ">
-                                <span>Purchase Ticket</span>
-                            </a>
+                        </div>
+                        <!-- partial -->
+                        
+
+
+                            <!-- toggle icons -->
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            
                         </div>
 
-                        <!-- toggle icons -->
-                        <div class="header-bar d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <!-- ==========Header Section Ends Here========== -->
 
@@ -519,7 +532,7 @@
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Enter email">
                                         </div>
-                                        <button type="submit" class="lab-btn">Send Massage <i
+                                        <button type="submit" class="lab-btn"><span>Send Massage</span> <i
                                                 class="icofont-paper-plane"></i></button>
                                     </form>
                                 </div>

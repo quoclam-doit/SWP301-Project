@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Fav icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/01.png">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Biểu-tượng-không-chữ1.png">
 
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -16,79 +16,163 @@
 	<link rel="stylesheet" href="assets/css/lightcase.css">
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.js'></script>
+    <script src="assets/css/script.js"></script>
 </head>
 
 <body>
 
-	<!-- preloader start here -->
-	<div class="preloader">
-		<div class="preloader-inner">
-			<div class="preloader-icon">
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-	</div>
-	<!-- preloader ending here -->
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
 
 
-	<!-- ==========Header Section Starts Here========== -->
-	<header class="header-section">
-		<div class="header-bottom">
-			<div class="container">
-				<div class="header-wrapper">
-					<div class="logo">
-						<a href="index.html">
-							<img src="assets/images/logo/01.png" alt="logo">
-						</a>
-					</div>
-					<div class="menu-area">
-						<ul class="menu">
-							<li>
+    <!-- ==========Header Section Starts Here========== -->
+    <header class="header-section">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/resize-logo/TEXT-(153x50)1.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu-area">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+                            </li>
 
-								<a href="index.html"><i class="icofont-home"></i>Home</a>
-							</li>
+                            <li>
+                                <a href="club.html"><i class="fa fa-cube"></i> Club</a>
+                            </li>
+                            <li>
+                                <a href="event.html"><i class="fa fa-calendar-check"></i>Event</a>
+                                <!-- <ul class="submenu">
+                                    <li><a class="active" href="event.html">All Speakers</a></li>
+                                    <li><a href="event-details.html">Speaker Details</a></li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a href="#0"><i class="icofont-institution"></i>Features</a>
+                                <ul class="submenu">
+                                    <li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
+                                    <li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
+                                    </li>
 
-							<li>
-								<a href="club.html"><i class="icofont-diners-club-alt-1"></i>Club</a>
-							</li>
-							<li>
-								<a href="#0"><i class="icofont-leaf"></i>Features</a>
-								<ul class="submenu">
-									<li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
-									<li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
-									</li>
-
-								</ul>
-							</li>
+                                </ul>
+                            </li>
 
 
-							<li>
-								<a href="blog.html"><i class="icofont-blogger"></i>Blog</a>
-								<!-- <ul class="submenu">
+                            <li>
+                                <a href="blog.html"><i class="fa fa-newspaper"></i>Blog</a>
+                                <!-- <ul class="submenu">
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="blog-single.html">Blog Single</a></li>
                                 </ul> -->
-							</li>
-							<li><a href="contact.html"><i class="icofont-contacts"></i>Contact</a></li>
+                            </li>
+                            <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
+							<li>
+                                <a href="#0	"><i class="fas fa-user"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
+                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- partial:index.partial.html -->
+                        <div ng-app="demoApp" class="dropdowns">
+                            <div class="wrapper" ng-controller="demoController">
+                                <div class="nav-bar">
+                                    <ul>
+                                        <li>
+                                            <div class="dropdowns-wrapper">
+                                                <div class="dropdown-container">
+                                                    <div class="notifications dropdown dd-trigger"
+                                                        ng-click="showNotifications($event)">
+                                                        <span class="count animated"
+                                                            id="notifications-count">{{awaitingNotifications}}</span>
+                                                        <span class="fa fa-bell-o"></span>
+                                                    </div>
+                                                    <div class="dropdown-menu animated" id="notification-dropdown">
+                                                        <div class="dropdown-header">
+                                                            <span class="triangle"></span>
+                                                            <span class="heading">Notifications</span>
+                                                            <span class="count"
+                                                                id="dd-notifications-count">{{newNotifications.length}}</span>
+                                                        </div>
+                                                        <div class="dropdown-body">
+                                                            <div class="notification new"
+                                                                ng-repeat="notification in newNotifications.slice().reverse() track by notification.timestamp">
+                                                                <div class="notification-image-wrapper">
+                                                                    <div class="notification-image">
+                                                                        <img src="{{notification.user.imageUrl}}" alt=""
+                                                                            width="32">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notification-text">
+                                                                    <span
+                                                                        class="highlight">{{notification.user.name}}</span>
+                                                                    {{notification.action}} {{notification.target}}
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification"
+                                                                ng-repeat="notification in readNotifications.slice().reverse() track by $index">
+                                                                <div class="notification-image-wrapper">
+                                                                    <div class="notification-image">
+                                                                        <img src="{{notification.user.imageUrl}}" alt=""
+                                                                            width="32">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notification-text">
+                                                                    <span
+                                                                        class="highlight">{{notification.user.name}}</span>
+                                                                    {{notification.action}} {{notification.target}}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
 
-						</ul>
-						<i class="icofont-login"></i><a href="login.html">Log In/</a>
+                                    </ul>
+									
+                                </div>
+                            </div>
+                        </div>
+                        <!-- partial -->
+                        
 
-						<i class="icofont-user"></i><a href="registration.html">Sign Up</a>
 
-						<!-- toggle icons -->
-						<div class="header-bar d-lg-none">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- ==========Header Section Ends Here========== -->
+                            <!-- toggle icons -->
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- ==========Header Section Ends Here========== -->
 
 
 	<!-- Page Header Section Start Here -->
@@ -112,7 +196,7 @@
 			<div class="section-wrapper">
 				<div class="row justify-content-center pb-15">
 					<div class="col-lg-8 col-12">
-						<article style="margin-right: 80px; margin-left: -80px;">
+						<article class="fixmarginblog">
 							<div class="post-item-2">
 								<div class="post-inner">
 									<div class="post-thumb rounded">
@@ -227,7 +311,7 @@
 										<div class="tags-area">
 											<ul class="tags lab-ul justify-content-center">
 												<li>
-													<a href="#">Event</a>
+													<a href="#" class="active">Event</a>
 												</li>
 												<li>
 													<a href="#" class="active">NoneProfit</a>
@@ -236,7 +320,7 @@
 													<a href="#" class="active">Admission</a>
 												</li>
 												<li>
-													<a href="#">Exams</a>
+													<a href="#" class="active">Exams</a>
 												</li>
 											</ul>
 											<!-- <ul class="share lab-ul justify-content-center">
@@ -358,10 +442,10 @@
 						</article>
 					</div>
 					<div class="col-lg-4 col-md-7 col-12">
-						<aside class="ps-lg-4" style="margin-left: 50px; margin-right: -100px;">
+						<aside class="ps-lg-4 fixmarginblog2">
 							<div class="widget widget-search">
 								<div class="widget-header">
-									<h5>Search Your keywords</h5>
+									<h5 style="color: #000;">Search Your keywords</h5>
 								</div>
 								<form action="/" class="search-wrapper">
 									<input class="rounded" type="text" name="s" placeholder="Search Here...">
@@ -696,7 +780,7 @@
 											<input type="email" class="form-control" placeholder="Enter email">
 										</div>
 										<a href="mailto:daihoc.hcm@fpt.edu.vn">
-											<button type="submit" class="lab-btn">Send Massage <i
+											<button type="submit" class="lab-btn"><span>Send Massage</span><i
 													class="icofont-paper-plane"></i></button>
 										</a>
 									</form>

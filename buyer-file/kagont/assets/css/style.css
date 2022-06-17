@@ -974,14 +974,24 @@ ul li {
 }
 
 @media (min-width: 992px) {
-  .col-lg-4 {
-    margin: 0px 0px 0px 0px;
+  .fixmarginblog {
+    margin-right: 100px;
+    margin-left: -100px;
   }
-
+  .fixmarginblog2 {
+    margin-right: -100px;
+    margin-left: 0px;
+  }
+  .fixmargincontact {
+    margin-right: -100px;
+    margin-left: 153px;
+  }
+  
   .padding-tb {
     padding-top: 120px;
     padding-bottom: 105px;
   }
+
 }
 
 .padding-b {
@@ -1788,7 +1798,6 @@ ul li {
   border: none;
   width: 100%;
   outline: none;
-  background-color: rgba(53, 53, 53, 0.1);
   color: rgb(0, 0, 0);
 }
 
@@ -2329,19 +2338,19 @@ ul li {
 }
 
 .tags li a {
-  color: #fff;
+  color: rgb(198, 198, 198);
   line-height: 40px;
   padding: 0 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #5a1592;
 }
 
 .tags li a:hover,
 .tags li a.active {
   background: #df01ae;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-color: #df01ae;
 }
 
@@ -2808,9 +2817,9 @@ ul li {
   height: 46px;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #df01ae;
   box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1);
-  color: #df01ae;
+  color: #fff;
   font-weight: 700;
   z-index: 1;
   -webkit-border-radius: 50%;
@@ -2823,17 +2832,17 @@ ul li {
 
 .paginations ul li a.active,
 .paginations ul li a:hover {
-  color: #fff;
-  background: #df01ae;
+  color: #df01ae;
+  background: #fff;
 }
 
 .paginations ul li a.dot {
-  color: #df01ae;
+  color: #fff;
   font-weight: 700;
 }
 
 .paginations ul li a.dot:hover {
-  color: #fff;
+  color: #df01ae;
 }
 
 .tags-social .tags {
@@ -3230,8 +3239,11 @@ ul li {
   z-index: 999;
 }
 
+.header-bottom {
+  background: #150f2e;
+}
 .header-section.header-fixed .header-bottom {
-  background: #00163f;
+  background: #150f2e;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -3368,10 +3380,13 @@ ul li {
   .menu {
     margin-right: 30px;
   }
+  .fixpaddingheader{
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .menu>li>a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;
   padding: 15px 22px;
@@ -4106,7 +4121,7 @@ ul li {
 
 .post-item-2 .post-inner .post-content {
   padding: 30px;
-  background-color: rgb(250, 232, 232);
+  background-color: #fff;
 }
 
 .post-item-2 .post-inner .post-content .post-date {
@@ -4505,7 +4520,7 @@ ul li {
 
 .comments {
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background-color: rgb(250, 232, 232);
+  background-color: #6D696A;
 }
 
 .comments .comment-title {
@@ -4627,7 +4642,7 @@ ul li {
 .comment-respond {
   margin-top: 30px;
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background-color: rgb(250, 232, 232);
+  background-color: #6D696A;
 }
 
 .comment-respond h6 {
@@ -5061,7 +5076,7 @@ ul li {
   padding: 40px 30px;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-color: rgb(250, 232, 232);
+  background-color: #f7ffe0;
   /* background-color: #5a1592; */
 
 }
@@ -5250,7 +5265,7 @@ ul li {
   font-weight: 700;
   color: rgb(0, 0, 0);
   margin-right: 10px;
-  background-color: rgb(250, 232, 232);
+  background-color: #ebffad;
 
 }
 
@@ -5305,7 +5320,7 @@ ul li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(250, 232, 232);
+    background-color: #f2efc7;
 
   }
 }
@@ -5386,7 +5401,7 @@ ul li {
 }
 
 .shop-single .review .review-content .review-showing .client-review {
-  background-color: rgb(250, 232, 232);
+  background-color: #f2efc7;
 
   border-radius: 5px;
 }
@@ -5555,7 +5570,7 @@ ul li {
 
 .widget.widget-search h5 {
   margin-bottom: 40px;
-  color: #000;
+  color: #fff;
 }
 
 .widget.widget-search .search-wrapper input {
@@ -6226,7 +6241,7 @@ ul li {
   padding: 15px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(41, 39, 39, 0.1);
   width: 100%;
   margin-bottom: 30px;
   color: rgb(0, 0, 0);
@@ -6501,7 +6516,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item
 }
 
 footer .footer-bottom {
-  background: #00163f;
+  background: #0e0a1f;
 }
 
 footer .footer-bottom .footer-bottom-content {
@@ -7478,7 +7493,7 @@ h6 {
   -moz-border-radius: 4px;
   border-radius: 4px;
   box-shadow: 4px 4px 0 0 currentColor;
-  border-color: #df01ae;  
+  border-color: #df01ae;
 }
 
 
@@ -8024,8 +8039,20 @@ element.style {
 }
 
 /* contact fix */
+.colorcontacth4 {
+  color: #5a1592;
+}
+
 .fw-bold {
   color: #000;
 }
+
 /* blog */
+.colorsearch {
+  color: #000;
+}
+
+/* .fixpaddingblog {
+  padding-right: 50px;
+} */
 

@@ -84,7 +84,14 @@
                                 </ul> -->
                             </li>
                             <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
-
+							<li>
+                                <a href="#0	"><i class="fas fa-user"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
+                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                         <!-- partial:index.partial.html -->
                         <div ng-app="demoApp" class="dropdowns">
@@ -144,14 +151,12 @@
                                         </li>
 
                                     </ul>
+									
                                 </div>
                             </div>
                         </div>
                         <!-- partial -->
-                        <div class="padding">
-                            <i class="icofont-login"></i><a href="login.html">Log In/</a>
-                            <i class="icofont-user"></i><a href="registration.html">Sign Up</a>
-                        </div>
+                        
 
 
                             <!-- toggle icons -->
@@ -190,13 +195,13 @@
 		<div class="container" >
 			<div class="section-wrapper">
 				<div class="row justify-content-center">
-					<div class="col-lg-8 col-12">
-						<article style="margin-right: 80px; margin-left: -80px;">
+					<div class="col-lg-8 col-12 ">
+						<article class="fixmarginblog">
 							<div class="post-item-2">
 								<div class="post-inner">
 									<div class="post-thumb rounded">
 										<a href="blog-single.html">
-											<img src="assets/images/blog/770x370.01.jpg" width="770px" height="370px" alt="blog">
+											<img src="assets/images/blog/770x370.01.jpg" width="100%" alt="blog">
 										</a>
 									</div>
 									<div class="post-content">
@@ -353,10 +358,10 @@
 						</article>
 					</div>
 					<div class="col-lg-4 col-md-7 col-12" >
-						<aside class="ps-lg-4" style="margin-left: 50px; margin-right: -100px;">
+						<aside class="ps-lg-4 fixmarginblog2">
 							<div class="widget widget-search">
 								<div class="widget-header">
-									<h5>Search Your keywords</h5>
+									<h5 style="color: #000;">Search Your keywords</h5>
 								</div>
 								<form action="/" class="search-wrapper">
 									<input class="rounded" type="text" name="s" placeholder="Search Here...">
@@ -691,7 +696,7 @@
                                             <input type="email" class="form-control" placeholder="Enter email">
                                         </div>
                                         <a href="mailto:daihoc.hcm@fpt.edu.vn">
-                                        <button type="submit" class="lab-btn">Send Massage <i
+                                        <button type="submit" class="lab-btn"><span>Send Massage </span><i
                                                 class="icofont-paper-plane"></i></button>
                                             </a>
                                     </form>
