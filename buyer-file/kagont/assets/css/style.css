@@ -3430,7 +3430,7 @@ ul li {
     text-transform: capitalize;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-size: 14px;
     color: #182d41;
     font-weight: 500;
@@ -3517,7 +3517,7 @@ ul li {
   .menu li .submenu li a {
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .menu.active {
@@ -8056,3 +8056,7 @@ element.style {
   padding-right: 50px;
 } */
 
+.coloruser {
+  padding-left: 10px;
+  color: #f44ee2;
+}
