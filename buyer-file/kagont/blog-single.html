@@ -18,7 +18,6 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="assets/css/style2.css">
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.js'></script>
@@ -60,117 +59,97 @@
                             </li>
                             <li>
                                 <a href="event.html"><i class="fa fa-calendar-check"></i>Event</a>
-                                <!-- <ul class="submenu">
-                                    <li><a class="active" href="event.html">All Speakers</a></li>
-                                    <li><a href="event-details.html">Speaker Details</a></li>
-                                </ul> -->
                             </li>
                             <li>
                                 <a href="#0"><i class="icofont-institution"></i>Features</a>
                                 <ul class="submenu">
-                                    <li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
-                                    <li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
+                                    <li><a href="gallery.html"><i class="icofont-pixels"></i>&nbsp; Gallery</a></li>
+                                    <li><a href="coming-soon.html"><i class="icofont-delivery-time"></i>&nbsp;
+                                            Coming-soon</a>
                                     </li>
 
                                 </ul>
                             </li>
-
 
                             <li>
                                 <a href="blog.html"><i class="fa fa-newspaper"></i>Blog</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul> -->
+                                
                             </li>
                             <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
-							<li>
-                                <a href="#0	"><i class="fas fa-user"></i></a>
+                            <li>
+                                <a><i class="fas fa-user"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
-                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
-                                    </li>
+                                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp; Login </a></li>
+                                    <li><a href="registration.html"><i class="fas fa-user"></i>&nbsp; Register</a></li>
+
                                 </ul>
                             </li>
+
+
                         </ul>
                         <!-- partial:index.partial.html -->
-                        <div ng-app="demoApp" class="dropdowns">
-                            <div class="wrapper" ng-controller="demoController">
-                                <div class="nav-bar">
-                                    <ul>
-                                        <li>
-                                            <div class="dropdowns-wrapper">
-                                                <div class="dropdown-container">
-                                                    <div class="notifications dropdown dd-trigger"
-                                                        ng-click="showNotifications($event)">
-                                                        <span class="count animated"
-                                                            id="notifications-count">{{awaitingNotifications}}</span>
-                                                        <span class="fa fa-bell-o"></span>
-                                                    </div>
-                                                    <div class="dropdown-menu animated" id="notification-dropdown">
-                                                        <div class="dropdown-header">
-                                                            <span class="triangle"></span>
-                                                            <span class="heading">Notifications</span>
-                                                            <span class="count"
-                                                                id="dd-notifications-count">{{newNotifications.length}}</span>
-                                                        </div>
-                                                        <div class="dropdown-body">
-                                                            <div class="notification new"
-                                                                ng-repeat="notification in newNotifications.slice().reverse() track by notification.timestamp">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                            <div class="notification"
-                                                                ng-repeat="notification in readNotifications.slice().reverse() track by $index">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </li>
-
-                                    </ul>
-									
+                        <div class="notification">
+                            <a href="#">
+                              <div class="notBtn" href="#">
+                                <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                                <div class="number">2</div>
+                                <i class="fas fa-bell"></i>
+                                <div class="box">
+                                  <div class="display">
+                                    <div class="nothing">
+                                      <i class="fas fa-child stick"></i>
+                                      <div class="cent">Looks Like your all caught up!</div>
+                                    </div>
+                                    <div class="cont">
+                                      <!-- Fold this div and try deleting evrything inbetween -->
+                                      <div class="sec new">
+                                        <a>
+                                          <div class="profCont">
+                                            <img class="profile" src="assets/images/Profile/ảnh cá nhân.jpg">
+                                          </div>
+                                          <div class="txt textnotification">James liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:30 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec new">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://obamawhitehouse.archives.gov/sites/obamawhitehouse.archives.gov/files/styles/person_medium_photo/public/person-photo/amanda_lucidon22.jpg?itok=JFPi8OFJ">
+                                          </div>
+                                          <div class="txt textnotification">Annita liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:13 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3O45RK9qyCrZJivYsY6PmeVEJH07l7bkoolJmscBsNjzump27">
+                                          </div>
+                                          <div class="txt textnotification">Brie liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/6 - 9:35 pm</div>
+                                        </a>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- partial -->
-                        
-
-
-                            <!-- toggle icons -->
-                            <div class="header-bar d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            
+                              </div>
+                            </a>
+                          </div>
+                        <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
 
                     </div>
+
                 </div>
             </div>
+        </div>
     </header>
     <!-- ==========Header Section Ends Here========== -->
 
@@ -191,7 +170,7 @@
 	<!-- Page Header Section Ending Here -->
 
 	<!-- Blog Section Start Here -->
-	<div class="blog-section blog-page padding-tb aside-bg" style="background: #fff;">
+	<div class="blog-section blog-page padding-tb aside-bg" style="background: #f9eefb">
 		<div class="container">
 			<div class="section-wrapper">
 				<div class="row justify-content-center pb-15">
@@ -323,20 +302,7 @@
 													<a href="#" class="active">Exams</a>
 												</li>
 											</ul>
-											<!-- <ul class="share lab-ul justify-content-center">
-												<li>
-													<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-												</li>
-												<li>
-													<a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-												</li>
-												<li>
-													<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-												</li>
-												<li>
-													<a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
-												</li>
-											</ul> -->
+											
 										</div>
 									</div>
 								</div>
@@ -351,24 +317,7 @@
 									<p></p>
 								</div>
 							</div>
-							<!-- <div class="authors rounded">
-								<div class="author-thumb">
-									<img src="assets/images/blog/author2.png" alt="author">
-								</div>
-								<div class="author-content">
-									<h6>Rassel Hossain</h6>
-									<p>Competently conceptualize alternative synergy and technically and niche
-										markets. Efficiently impact technically sound outsourcing rath
-										tnclicks-and-mortar best practices.</p>
-									<div class="social-media">
-										<a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-										<a href="#" class="behance"><i class="icofont-behance"></i></a>
-										<a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-										<a href="#" class="vimeo"><i class="icofont-vimeo"></i></a>
-										<a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-									</div>
-								</div>
-							</div> -->
+							
 
 							<div id="comments" class="comments rounded">
 								<h6 class="comment-title h7">02 Comment</h6>
@@ -442,10 +391,10 @@
 						</article>
 					</div>
 					<div class="col-lg-4 col-md-7 col-12">
-						<aside class="ps-lg-4 fixmarginblog2">
+						<aside class="fixmarginblog2">
 							<div class="widget widget-search">
 								<div class="widget-header">
-									<h5 style="color: #000;">Search Your keywords</h5>
+									<h5>Search Your keywords</h5>
 								</div>
 								<form action="/" class="search-wrapper">
 									<input class="rounded" type="text" name="s" placeholder="Search Here...">
@@ -508,113 +457,11 @@
 											<p>04 February 2019</p>
 										</div>
 									</li>
-									<!-- <li class="d-flex flex-wrap justify-content-between">
-										<div class="post-thumb rounded">
-											<a href="blog-single.html"><img src="assets/images/product/02.jpg"
-													alt="product"></a>
-										</div>
-										<div class="post-content ps-3">
-											<a href="blog-single.html">
-												<h6>Boosting Social For NGO
-													And Charities </h6>
-											</a>
-											<p>04 February 2019</p>
-										</div>
-									</li>
-									<li class="d-flex flex-wrap justify-content-between">
-										<div class="post-thumb rounded">
-											<a href="blog-single.html"><img src="assets/images/product/03.jpg"
-													alt="product"></a>
-										</div>
-										<div class="post-content ps-3">
-											<a href="blog-single.html">
-												<h6>Poor People’s Campaign
-													Our Resources</h6>
-											</a>
-											<p>04 February 2019</p>
-										</div>
-									</li>
-									<li class="d-flex flex-wrap justify-content-between">
-										<div class="post-thumb rounded">
-											<a href="blog-single.html"><img src="assets/images/product/04.jpg"
-													alt="product"></a>
-										</div>
-										<div class="post-content ps-3">
-											<a href="blog-single.html">
-												<h6>Boosting Social For NGO
-													And Charities </h6>
-											</a>
-											<p>04 February 2019</p>
-										</div>
-									</li> -->
+									
 								</ul>
 							</div>
 
-							<!-- <div class="widget widget-instagram">
-								<div class="widget-header">
-									<h5>Instagram</h5>
-								</div>
-								<ul class="lab-ul widget-wrapper d-flex flex-wrap justify-content-center">
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/01.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/02.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/03.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/04.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/05.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/06.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/07.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/08.jpg"
-												alt="gallery-img"></a></li>
-									<li><a class="rounded" href="#"><img src="assets/images/gallery/09.jpg"
-												alt="gallery-img"></a></li>
-								</ul>
-							</div> -->
-
-							<!-- <div class="widget widget-archive">
-								<div class="widget-header">
-									<h5>Our Archive</h5>
-								</div>
-								<ul class="lab-ul widget-wrapper list-bg-none">
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>January</span><span>2021</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>February</span><span>2021</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>March</span><span>2019</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>August</span><span>2018</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>September</span><span>2017</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>October</span><span>2016</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>November</span><span>2014</span></a>
-									</li>
-									<li>
-										<a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-													class="icofont-ui-calendar"></i>December</span><span>2013</span></a>
-									</li>
-								</ul>
-							</div> -->
+							
 
 							<div class="widget widget-tags">
 								<div class="widget-header">
@@ -625,13 +472,7 @@
 									<li><a href="#">2022</a></li>
 									<li><a href="#">Club</a></li>
 									<li><a href="#">Giải trí</a></li>
-									<!-- <li><a href="#">codecanyon</a></li>
-									<li><a href="#">videohive</a></li>
-									<li><a href="#">audiojungle</a></li>
-									<li><a href="#">3docean</a></li>
-									<li><a href="#">envato</a></li>
-									<li><a href="#">themeforest</a></li>
-									<li><a href="#">codecanyon</a></li> -->
+									
 								</ul>
 							</div>
 						</aside>

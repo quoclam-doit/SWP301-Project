@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="assets/css/style2.css">
+
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.js'></script>
@@ -60,120 +60,100 @@
                             </li>
                             <li>
                                 <a href="event.html"><i class="fa fa-calendar-check"></i>Event</a>
-                                <!-- <ul class="submenu">
-                                    <li><a class="active" href="event.html">All Speakers</a></li>
-                                    <li><a href="event-details.html">Speaker Details</a></li>
-                                </ul> -->
                             </li>
                             <li>
                                 <a href="#0"><i class="icofont-institution"></i>Features</a>
                                 <ul class="submenu">
-                                    <li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
-                                    <li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
+                                    <li><a href="gallery.html"><i class="icofont-pixels"></i>&nbsp; Gallery</a></li>
+                                    <li><a href="coming-soon.html"><i class="icofont-delivery-time"></i>&nbsp;
+                                            Coming-soon</a>
                                     </li>
 
                                 </ul>
                             </li>
-
 
                             <li>
                                 <a href="blog.html"><i class="fa fa-newspaper"></i>Blog</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul> -->
+                                
                             </li>
                             <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
-							<li>
-                                <a href="#0	"><i class="fas fa-user"></i></a>
+                            <li>
+                                <a><i class="fas fa-user"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
-                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
-                                    </li>
+                                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp; Login </a></li>
+                                    <li><a href="registration.html"><i class="fas fa-user"></i>&nbsp; Register</a></li>
+
                                 </ul>
                             </li>
+
+
                         </ul>
                         <!-- partial:index.partial.html -->
-                        <div ng-app="demoApp" class="dropdowns">
-                            <div class="wrapper" ng-controller="demoController">
-                                <div class="nav-bar">
-                                    <ul>
-                                        <li>
-                                            <div class="dropdowns-wrapper">
-                                                <div class="dropdown-container">
-                                                    <div class="notifications dropdown dd-trigger"
-                                                        ng-click="showNotifications($event)">
-                                                        <span class="count animated"
-                                                            id="notifications-count">{{awaitingNotifications}}</span>
-                                                        <span class="fa fa-bell-o"></span>
-                                                    </div>
-                                                    <div class="dropdown-menu animated" id="notification-dropdown">
-                                                        <div class="dropdown-header">
-                                                            <span class="triangle"></span>
-                                                            <span class="heading">Notifications</span>
-                                                            <span class="count"
-                                                                id="dd-notifications-count">{{newNotifications.length}}</span>
-                                                        </div>
-                                                        <div class="dropdown-body">
-                                                            <div class="notification new"
-                                                                ng-repeat="notification in newNotifications.slice().reverse() track by notification.timestamp">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                            <div class="notification"
-                                                                ng-repeat="notification in readNotifications.slice().reverse() track by $index">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </li>
-
-                                    </ul>
-									
+                        <div class="notification">
+                            <a href="#">
+                              <div class="notBtn" href="#">
+                                <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                                <div class="number">2</div>
+                                <i class="fas fa-bell"></i>
+                                <div class="box">
+                                  <div class="display">
+                                    <div class="nothing">
+                                      <i class="fas fa-child stick"></i>
+                                      <div class="cent">Looks Like your all caught up!</div>
+                                    </div>
+                                    <div class="cont">
+                                      <!-- Fold this div and try deleting evrything inbetween -->
+                                      <div class="sec new">
+                                        <a>
+                                          <div class="profCont">
+                                            <img class="profile" src="assets/images/Profile/ảnh cá nhân.jpg">
+                                          </div>
+                                          <div class="txt textnotification">James liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:30 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec new">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://obamawhitehouse.archives.gov/sites/obamawhitehouse.archives.gov/files/styles/person_medium_photo/public/person-photo/amanda_lucidon22.jpg?itok=JFPi8OFJ">
+                                          </div>
+                                          <div class="txt textnotification">Annita liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:13 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3O45RK9qyCrZJivYsY6PmeVEJH07l7bkoolJmscBsNjzump27">
+                                          </div>
+                                          <div class="txt textnotification">Brie liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/6 - 9:35 pm</div>
+                                        </a>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- partial -->
-                        
-
-
-                            <!-- toggle icons -->
-                            <div class="header-bar d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            
+                              </div>
+                            </a>
+                          </div>
+                        <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
 
                     </div>
+
                 </div>
             </div>
+        </div>
     </header>
     <!-- ==========Header Section Ends Here========== -->
-
+    
     <!-- Page Header Section Start Here -->
     <section class="page-header bg_img padding-tb">
         <div class="overlay"></div>
@@ -187,11 +167,11 @@
             </div>
         </div>
     </section>
-    <!-- Page Header Section Ending Here -->git commit -m 'done notification'
+    <!-- Page Header Section Ending Here -->
 
     <!-- Contact Us Section Start Here -->
     <div class="contact-section">
-        <div class="contact-top padding-tb aside-bg padding-b" style="background: #fff;">
+        <div class="contact-top padding-tb aside-bg padding-b" style="background: #f9eefb;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -253,7 +233,7 @@
                                         </div>
                                         <div class="contact-info-details">
                                             <a href="mailto:daihoc.hcm@fpt.edu.vn" class="fw-bold">Send Mail</a>
-                                            <p >daihoc.hcm@fpt.edu.vn</p>
+                                            <p class="fw-bold">daihoc.hcm@fpt.edu.vn</p>
                                         </div>
                                     </div>
                                 </div>

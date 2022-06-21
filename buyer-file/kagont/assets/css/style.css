@@ -620,7 +620,8 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
 .comments,
 .fore-zero .section-wrapper .zero-item,
 .primary-bg {
-  background: #00102e;
+  background: linear-gradient(90deg, hsla(276, 91%, 38%, 1) 0%, hsla(263, 87%, 35%, 1) 100%);
+  
 }
 
 .shop-product-wrap .product-item,
@@ -812,7 +813,8 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
 }
 
 body {
-  background: #fff;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  background: #f9eefb;
   color: #fff;
   font-family: "Vollkorn", serif;
   font-size: 16px;
@@ -981,6 +983,9 @@ ul li {
   .fixmarginblog2 {
     margin-right: -100px;
     margin-left: 0px;
+    background: #9673d3;
+    border-radius: 10px;
+    padding-right: 15px;
   }
   .fixmargincontact {
     margin-right: -100px;
@@ -1788,6 +1793,8 @@ ul li {
 
 .widget.widget-search h5 {
   margin-bottom: 40px;
+  color: #fff;
+
 }
 
 .widget.widget-search .search-wrapper input {
@@ -1859,7 +1866,7 @@ ul li {
 
 .widget.widget-category .widget-wrapper li a span {
   font-weight: 500;
-  color: #000;
+  color: #fff;
 }
 
 .widget.widget-category .widget-wrapper li a span:last-child {
@@ -1867,7 +1874,7 @@ ul li {
   height: 30px;
   line-height: 30px;
   border-radius: 100%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1953,7 +1960,7 @@ ul li {
 .widget.widget-post ul.widget-wrapper li .post-content h6 {
   font-size: 16px;
   line-height: 1.5;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   margin-bottom: 2px;
 }
@@ -1964,7 +1971,7 @@ ul li {
 
 .widget.widget-post ul.widget-wrapper li .post-content p {
   margin: 0;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 .widget.widget-instagram {
@@ -2014,7 +2021,7 @@ ul li {
 
 .widget.widget-tags ul.widget-wrapper li a {
   padding: 7px 13px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 500;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease;
@@ -4520,7 +4527,7 @@ ul li {
 
 .comments {
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background-color: #6D696A;
+  background: #f2efc7;
 }
 
 .comments .comment-title {
@@ -4642,7 +4649,7 @@ ul li {
 .comment-respond {
   margin-top: 30px;
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background-color: #6D696A;
+  background: #f2efc7;
 }
 
 .comment-respond h6 {
@@ -4711,7 +4718,7 @@ ul li {
 .article-pagination .next-article a {
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   margin-bottom: 10px;
   -webkit-transition: all 0.3s ease;
@@ -5076,7 +5083,7 @@ ul li {
   padding: 40px 30px;
   margin-bottom: 40px;
   border-radius: 5px;
-  background-color: #f7ffe0;
+  background: #f7ffe0;
   /* background-color: #5a1592; */
 
 }
@@ -5265,7 +5272,7 @@ ul li {
   font-weight: 700;
   color: rgb(0, 0, 0);
   margin-right: 10px;
-  background-color: #ebffad;
+  background: #ebffad;
 
 }
 
@@ -5401,7 +5408,7 @@ ul li {
 }
 
 .shop-single .review .review-content .review-showing .client-review {
-  background-color: #f2efc7;
+  background: #f2efc7;
 
   border-radius: 5px;
 }
@@ -5528,7 +5535,7 @@ ul li {
 
 .widget .widget-header h5 {
   text-transform: capitalize;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   position: relative;
   font-family: "Arvo", serif;
@@ -5605,7 +5612,7 @@ ul li {
 .widget.widget-archive h5,
 .widget.widget-category h5 {
   margin-bottom: 40px;
-  color: #000;
+  color: #fff;
 }
 
 .widget.widget-archive .widget-wrapper li,
@@ -5678,6 +5685,7 @@ ul li {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 .shop-product-wrap .product-item:hover .product-thumb::after,
@@ -8059,4 +8067,161 @@ element.style {
 .coloruser {
   padding-left: 10px;
   color: #f44ee2;
+}
+
+/* notification */
+
+
+
+
+
+
+.notification{
+  margin-top: -20px;
+  position: relative;
+  display: inline-block;
+}
+
+.number{
+  height: 15px;
+    width: 15px;
+    background-color: #d63031;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    padding: 0px;
+    border-width: 2px;
+    font-size: x-small;
+}
+
+.number:empty {
+   display: none;
+}
+
+.notBtn{
+  transition: 0.5s;
+  cursor: pointer
+}
+
+
+.box{
+  width: 300px;
+  height: 0px;
+  border-radius: 10px;
+  transition: 0.5s;
+  position: absolute;
+  overflow-y: scroll;
+  padding: 0px;
+  left: -300px;
+  margin-top: 5px;
+  background: #F4F4F4;
+  -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+  cursor: context-menu;
+
+}
+
+
+
+.notBtn:hover > .box{
+  height: 60vh
+}
+
+.content{
+  padding: 20px;
+  color: black;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.gry{
+  background-color: #F4F4F4;
+}
+
+.top{
+  color: black;
+  padding: 10px
+}
+
+.display{
+  position: relative;
+}
+
+.cont{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.cont:empty{
+  display: none;
+}
+
+.stick{
+  text-align: center;  
+  display: block;
+  font-size: 50pt;
+  padding-top: 70px;
+  padding-left: 80px
+}
+
+.stick:hover{
+  color: black;
+}
+
+.cent{
+  text-align: center;
+  display: block;
+}
+
+.sec{
+  padding: 0px 10px;
+  background-color: #F4F4F4;
+  transition: 0.5s;
+}
+
+.profCont{
+  padding-left: 15px;
+}
+
+.profile{
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  width: 60px;
+  float: left;
+  margin-top: 20px;
+}
+
+.txt{
+  vertical-align: top;
+  font-size: 1.25rem;
+  padding: 5px 10px 0px 115px;
+}
+
+.sub{
+  font-size: 1rem;
+  color: grey;
+}
+
+.new{
+  border-style: none none solid none;
+  border-color: red;
+}
+
+.sec:hover{
+  background-color: #BFBFBF;
+}
+
+
+.textnotification{
+  color: #000;
+  font-size: 15px;
+  font-family: 'Playfair', serif;
+  font-weight: bold;
 }

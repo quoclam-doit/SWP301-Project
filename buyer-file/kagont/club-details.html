@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="assets/css/style2.css">
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.js'></script>
@@ -79,117 +78,97 @@
                             </li>
                             <li>
                                 <a href="event.html"><i class="fa fa-calendar-check"></i>Event</a>
-                                <!-- <ul class="submenu">
-                                    <li><a class="active" href="event.html">All Speakers</a></li>
-                                    <li><a href="event-details.html">Speaker Details</a></li>
-                                </ul> -->
                             </li>
                             <li>
                                 <a href="#0"><i class="icofont-institution"></i>Features</a>
                                 <ul class="submenu">
-                                    <li><a href="gallery.html">Gallery<i class="icofont-pixels"></i></a></li>
-                                    <li><a href="coming-soon.html">Coming-soon<i class="icofont-delivery-time"></i></a>
+                                    <li><a href="gallery.html"><i class="icofont-pixels"></i>&nbsp; Gallery</a></li>
+                                    <li><a href="coming-soon.html"><i class="icofont-delivery-time"></i>&nbsp;
+                                            Coming-soon</a>
                                     </li>
 
                                 </ul>
                             </li>
-
 
                             <li>
                                 <a href="blog.html"><i class="fa fa-newspaper"></i>Blog</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul> -->
+                                
                             </li>
                             <li><a href="contact.html"><i class="icofont-ui-message"></i>Contact</a></li>
-							<li>
-                                <a href="#0	"><i class="fas fa-user"></i></a>
+                            <li>
+                                <a><i class="fas fa-user"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="login.html">Login<i class="fas fa-sign-in-alt"></i></a></li>
-                                    <li><a href="registration.html">Register<i class="fas fa-user"></i></a>
-                                    </li>
+                                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp; Login </a></li>
+                                    <li><a href="registration.html"><i class="fas fa-user"></i>&nbsp; Register</a></li>
+
                                 </ul>
                             </li>
+
+
                         </ul>
                         <!-- partial:index.partial.html -->
-                        <div ng-app="demoApp" class="dropdowns">
-                            <div class="wrapper" ng-controller="demoController">
-                                <div class="nav-bar">
-                                    <ul>
-                                        <li>
-                                            <div class="dropdowns-wrapper">
-                                                <div class="dropdown-container">
-                                                    <div class="notifications dropdown dd-trigger"
-                                                        ng-click="showNotifications($event)">
-                                                        <span class="count animated"
-                                                            id="notifications-count">{{awaitingNotifications}}</span>
-                                                        <span class="fa fa-bell-o"></span>
-                                                    </div>
-                                                    <div class="dropdown-menu animated" id="notification-dropdown">
-                                                        <div class="dropdown-header">
-                                                            <span class="triangle"></span>
-                                                            <span class="heading">Notifications</span>
-                                                            <span class="count"
-                                                                id="dd-notifications-count">{{newNotifications.length}}</span>
-                                                        </div>
-                                                        <div class="dropdown-body">
-                                                            <div class="notification new"
-                                                                ng-repeat="notification in newNotifications.slice().reverse() track by notification.timestamp">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                            <div class="notification"
-                                                                ng-repeat="notification in readNotifications.slice().reverse() track by $index">
-                                                                <div class="notification-image-wrapper">
-                                                                    <div class="notification-image">
-                                                                        <img src="{{notification.user.imageUrl}}" alt=""
-                                                                            width="32">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="notification-text">
-                                                                    <span
-                                                                        class="highlight">{{notification.user.name}}</span>
-                                                                    {{notification.action}} {{notification.target}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </li>
-
-                                    </ul>
-									
+                        <div class="notification">
+                            <a href="#">
+                              <div class="notBtn" href="#">
+                                <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                                <div class="number">2</div>
+                                <i class="fas fa-bell"></i>
+                                <div class="box">
+                                  <div class="display">
+                                    <div class="nothing">
+                                      <i class="fas fa-child stick"></i>
+                                      <div class="cent">Looks Like your all caught up!</div>
+                                    </div>
+                                    <div class="cont">
+                                      <!-- Fold this div and try deleting evrything inbetween -->
+                                      <div class="sec new">
+                                        <a>
+                                          <div class="profCont">
+                                            <img class="profile" src="assets/images/Profile/ảnh cá nhân.jpg">
+                                          </div>
+                                          <div class="txt textnotification">James liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:30 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec new">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://obamawhitehouse.archives.gov/sites/obamawhitehouse.archives.gov/files/styles/person_medium_photo/public/person-photo/amanda_lucidon22.jpg?itok=JFPi8OFJ">
+                                          </div>
+                                          <div class="txt textnotification">Annita liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/7 - 2:13 pm</div>
+                                        </a>
+                                      </div>
+                                      <div class="sec">
+                                        <a href="https://codepen.io/Golez/">
+                                          <div class="profCont">
+                                            <img class="profile"
+                                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3O45RK9qyCrZJivYsY6PmeVEJH07l7bkoolJmscBsNjzump27">
+                                          </div>
+                                          <div class="txt textnotification">Brie liked your post: "Pure css notification box"</div>
+                                          <div class="txt sub textnotification">11/6 - 9:35 pm</div>
+                                        </a>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- partial -->
-                        
-
-
-                            <!-- toggle icons -->
-                            <div class="header-bar d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            
+                              </div>
+                            </a>
+                          </div>
+                        <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
 
                     </div>
+
                 </div>
             </div>
+        </div>
     </header>
     <!-- ==========Header Section Ends Here========== -->
 
@@ -210,302 +189,12 @@
     <!-- Page Header Section Ending Here -->
 
     <!-- Shop Page Section start here -->
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 club1">
-                <div class="panel panel-white profile-widget">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="image-container bg2">
-
-                                <img src="assets/images/club/279648423_2161848750638220_1998983852737770039_n.jpg"
-                                    class="avatar" alt="avatar">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="details">
-                                <h4> <i class="fa fa-sheild"></i></h4>
-                                <h4> <i class="fa fa-sheild">Câu Lạc Bộ Truyền Thông Cóc Sài Gòn</i></h4>
-                                <div>@cocsaigonfuhcm · Câu lạc bộ giao lưu</div>
-                                <div>Works at FPT University Ho Chi Minh</div>
-                                <div>Quận 9, Thành phố Hồ Chí Minh</div>
-                                <div class="mg-top-10">
-                                    <a href="#" class="btn btn-default club2">About Us</a>
-                                    <a href="#" class="btn btn-success">Follow</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-sm-12">
-                        <div class="panel panel-white post">
-                            <div class="post-heading">
-                                <div class="pull-left image">
-                                    <img src="assets/images/club/279648423_2161848750638220_1998983852737770039_n.jpg"
-                                        class="img-circle avatar" alt="user profile image">
-                                </div>
-                                <div class="pull-left meta">
-                                    <div class="title h5">
-                                        <a href="#"><b>Câu Lạc Bộ Truyền Thông Cóc Sài Gòn</b></a>
-                                        uploaded a photo.
-                                    </div>
-                                    <h6 class="text-muted time">5 seconds ago</h6>
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src=""><img src="assets/images/club/foto.jpg" class="image" alt="image post">
-                            </div>
-                            <div class="post-description">
-                                <h4>FOTOMARATHON 2022 | GẶP GỠ NHIẾP ẢNH GIA HẬU LÊ TẠI TALKSHOW “NHIẾP ẢNH THỜI TRANG
-                                    HIỆN ĐẠI”</h4>
-                                <p>
-
-                                    📸 Bạn yêu thích thời trang và đam mê nhiếp ảnh? Bạn có hứng thú với những bộ hình
-                                    thời trang đậm chất nghệ thuật? Hay đơn giản là “fan cứng” của nhiếp ảnh gia tài
-                                    năng Hậu Lê? Vậy thì Talkshow này là dành cho bạn.<br>
-
-                                    📌 THÔNG TIN CHI TIẾT TALKSHOW:<br>
-
-                                    Đối tượng: Khán giả có niềm yêu thích với nhiếp ảnh nói chung và nhiếp ảnh thời
-                                    trang nói riêng<br>
-                                    Thời gian: 17:30 - 18:30, Thứ Hai, ngày 23/05/2022<br>
-                                    Địa điểm: Hội trường B, trường Đại học FPT TP. HCM</p>
-
-                                <div class="stats">
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-thumbs-up icon"></i>228
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-share icon"></i>128
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-footer">
-                                <div class="input-group">
-                                    <input class="form-control" placeholder="Add a comment" type="text">
-                                    <span class="input-group-addon">
-                                        <a href="javascript:void(0);"><i class="fa fa-edit"></i></a>
-                                    </span>
-                                </div>
-                                <ul class="comments-list">
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John dOE</h4>
-                                                <h5 class="time">7 minutes ago</h5>
-                                            </div>
-                                            <p>I really love this picture. I really wish i could have been there.</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John Doe</h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>I think I might you this for one of my projects.</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John Doe</h4>
-                                                <h5 class="time">10 seconds ago</h5>
-                                            </div>
-                                            <p>Wow! This is gorgeous.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="panel panel-white post">
-                            <div class="post-heading">
-                                <div class="pull-left image">
-                                    <img src="assets/images/club/279648423_2161848750638220_1998983852737770039_n.jpg"
-                                        class="img-circle avatar" alt="user profile image">
-                                </div>
-                                <div class="pull-left meta">
-                                    <div class="title h5">
-                                        <a href="#"><b>Câu Lạc Bộ Truyền Thông Cóc Sài Gòn</b></a>
-                                        uploaded a photo.
-                                    </div>
-                                    <h6 class="text-muted time">5 seconds ago</h6>
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src=""><img src="assets/images/club/quân sự.jpg" class="image" alt="image post">
-                            </div>
-                            <div class="post-description">
-                                <h4>🔥NHẬT KÝ - KHOẢNH KHẮC - THƯỚC PHIM 2022 | CÔNG BỐ TOP 3 BÀI THI CÓ LƯỢT VOTING CAO
-                                    NHẤT </h4>
-                                <p>
-                                    Top 3 bài thi có voting cao nhất:<br>
-                                    ✨NHẬT KÝ ĐỜI LÍNH:<br>
-                                    💎 Trương Minh Hoàng<br>
-                                    ✨KHOẢNH KHẮC ĐỜI LÍNH:<br>
-                                    💎 Dương Hồng Quân<br>
-                                    ✨THƯỚC PHIM ĐỜI LÍNH:<br>
-                                    💎 Trần Lê Hữu Bằng<br>
-
-                                    🔥Cổng bình chọn online của cuộc thi vẫn đang diễn ra, các bạn có thể tiếp tục kêu
-                                    gọi bình chọn hoặc bình chọn cho các bài dự thi yêu thích ngay tại page Câu lạc bộ
-                                    Truyền thông Cóc Sài Gòn trước khi cổng bình chọn chính thức khép lại.<br>
-
-                                <div class="stats">
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-thumbs-up icon"></i>228
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-share icon"></i>128
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-footer">
-                                <div class="input-group">
-                                    <input class="form-control" placeholder="Add a comment" type="text">
-                                    <span class="input-group-addon">
-                                        <a href="javascript:void(0);"><i class="fa fa-edit"></i></a>
-                                    </span>
-                                </div>
-                                <ul class="comments-list">
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John dOE</h4>
-                                                <h5 class="time">7 minutes ago</h5>
-                                            </div>
-                                            <p>I really love this picture. I really wish i could have been there.</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John Doe</h4>
-                                                <h5 class="time">3 minutes ago</h5>
-                                            </div>
-                                            <p>I think I might you this for one of my projects.</p>
-                                        </div>
-                                    </li>
-                                    <li class="comment">
-                                        <a class="pull-left" href="javascript:void(0);">
-                                            <img class="avatar" src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                                                alt="avatar">
-                                        </a>
-                                        <div class="comment-body">
-                                            <div class="comment-heading">
-                                                <h4 class="user">John Doe</h4>
-                                                <h5 class="time">10 seconds ago</h5>
-                                            </div>
-                                            <p>Wow! This is gorgeous.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="panel panel-white post">
-                            <div class="post-heading">
-                                <div class="pull-left image">
-                                    <img src="assets/images/club/279648423_2161848750638220_1998983852737770039_n.jpg"
-                                        class="img-circle avatar" alt="user profile image">
-                                </div>
-                                <div class="pull-left meta">
-                                    <div class="title h5">
-                                        <a href="#"><b>Câu Lạc Bộ Truyền Thông Cóc Sài Gòn</b></a>
-                                        shared a video.
-                                    </div>
-                                    <h6 class="text-muted time">1 minute ago</h6>
-                                </div>
-                            </div>
-                            <div class="post-video">
-                                <div class="fluid-width-video-wrapper" style="padding-top: 56.2%;"><iframe
-                                        src="https://player.vimeo.com/video/98417189" id="fitvid369523"></iframe></div>
-                            </div>
-                            <div class="post-description">
-                                <h4>Nhạc ngáo cực mạnh </h4>
-                                <p>
-                                    Nhạc hay căng đét đèn đẹt<br>
-                                    20syl<br>
-                                    Kodama<br>
-
-                                <div class="stats">
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-thumbs-up icon"></i>228
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default stat-item">
-                                        <i class="fa fa-share icon"></i>128
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="post-footer">
-                                <div class="input-group">
-                                    <input class="form-control" placeholder="Add a comment" type="text">
-                                    <span class="input-group-addon">
-                                        <a href="javascript:void(0);"><i class="fa fa-edit"></i></a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div> -->
-    <!-- Shop Page Section ending here -->
-
     <!-- #2 -->
     <!-- Blog Start -->
     <div class="section">
         <div class="container">
 
-            <!-- Page Banner Title Start -->
-            <!-- <div class="page-banner-title">
-                <div class="image-container ">
-
-                    <img src="assets/images/blog/avatar csg.jpg"
-                        class="umbalahinhtron" alt="avatar">
-                </div>
-                <h2 class="title">Câu Lạc Bộ Truyền Thông Cóc Sài Gòn</h2> 
-                <p class="candong">
-                    @cocsaigonfuhcm · Câu lạc bộ giao lưu
-                </p><br>
-                <p>Mô tả: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat...dădwadwadwadasdad ádadsa page-banner-title sdwww</p> 
-            </div> -->
+            
             <div class="page-content page-container" id="page-content">
                 <div class="padding1">
                     <div class="row container d-flex justify-content-center">
@@ -579,43 +268,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Page Banner Title End -->
 
-            <!-- Filter  Section Start -->
-
-            <!-- This script got from frontendfreecode.com -->
-
-            <!-- This script got from frontendfreecode.com -->
-            <!-- <div class="container-fluid">
-                <br />
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <form class="card card-sm">
-                            <div class="card-body row no-gutters align-items-center">
-                                <div class="col-auto">
-                                    <i class="fa fa-search "></i>
-                                </div> -->
-            <!--end of col-->
-            <!-- <div class="col">
-                                    <input class="form-control form-control-lg form-control-borderless" style="width: 530px;" type="search"
-                                        placeholder="Search topics or keywords">
-                                </div> -->
-            <!--end of col-->
-            <!-- <div class="col-auto">
-                                    <button class="btn btn-lg " type="submit">Search</button>
-                                </div> -->
-            <!--end of col-->
-            <!-- </div>
-                        </form>
-                    </div> -->
-            <!--end of col-->
-            <!-- </div> -->
-
-
-
-            <!-- Filter  Section End -->
-
-            <!-- </div> -->
 
 
             <div class="container">
@@ -716,26 +369,7 @@
                             <!-- Single Blog End -->
                         </div>
                         <div class="col-lg-12 news community">
-                            <!-- Single Blog Start -->
-                            <!-- <div class="single-blog">
-                            <div class="blog-images">
-                                <a href="blog-details.html"><img src="assets/images/club/quâ" alt="Blog"></a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">news</a></li>
-                                    <li><a href="#">April 25th, 2024</a></li>
-                                    <li><a href="#">admin</a></li>
-                                </ul>
-                                <h3 class="title"><a href="blog-details.html">Standard article with image format</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate..</p>
-                            </div>
-                        </div> -->
-                            <!-- Single Blog End -->
+                            
                         </div>
                         <div class="col-lg-6 experience">
                             <!-- Single Blog Start -->
@@ -830,11 +464,7 @@
                 </div>
                 <!-- Blog Section End -->
 
-                <!-- Load More End -->
-                <!-- <div class="load-more text-center section-padding">
-                <a href="#" class="more">load more</a>
-            </div> -->
-                <!-- Load More End -->
+                
 
             </div>
             <div class="paginations">
@@ -1062,10 +692,6 @@
         <script src="assets/js/js/plugins/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/js/plugins/wow.js"></script>
         <script src="assets/js/js/plugins/ajax-contact.js"></script>
-
-        <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-        <!-- <script src="assets/js/plugins.min.js"></script> -->
-
 
         <!-- Main JS -->
         <script src="assets/js/js/main.js"></script>
