@@ -620,7 +620,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
 .comments,
 .fore-zero .section-wrapper .zero-item,
 .primary-bg {
-  background: #f2efc7;
+  background: linear-gradient(90deg, hsla(276, 91%, 38%, 1) 0%, hsla(263, 87%, 35%, 1) 100%);
   
 }
 
@@ -2151,6 +2151,9 @@ ul li {
   .coming-wrapper h1 {
     font-size: 55px;
   }
+  .fixmarginblog2{
+    background: #9673d3;
+  }
 }
 
 /*Common classes start*/
@@ -3505,7 +3508,8 @@ ul li {
     font-weight: 700;
     text-transform: capitalize;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #000;
+    background: rgb(255, 255, 255);
   }
 
   .menu li a:hover {
@@ -4527,9 +4531,13 @@ ul li {
 
 .comments {
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background: #f2efc7;
+  background: #fff;
+  border-radius: 5px;
 }
-
+.comments1 {
+  filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
+  background: #fff;
+}
 .comments .comment-title {
   padding: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -4543,7 +4551,7 @@ ul li {
 }
 
 .comments .comment-list .com-item {
-  padding: 30px 30px 0;
+  padding: 0px 30px 0;
 }
 
 .comments .comment-list .comment .com-thumb {
@@ -4565,8 +4573,8 @@ ul li {
 
 @media (min-width: 768px) {
   .comments .comment-list .comment .com-thumb {
-    height: 80px;
-    width: 80px;
+    /* height: 80px;
+    width: 80px; */
   }
 }
 
@@ -4649,7 +4657,7 @@ ul li {
 .comment-respond {
   margin-top: 30px;
   filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.06));
-  background: #f2efc7;
+  background: #fff;
 }
 
 .comment-respond h6 {
@@ -4671,6 +4679,7 @@ ul li {
   padding: 10px 15px;
   border-radius: 4px;
   width: 100%;
+  background: rgba(60, 60, 60, 0.1);
 }
 
 @media (min-width: 576px) {
@@ -4685,7 +4694,7 @@ ul li {
   border: none;
   outline: none;
   margin-bottom: 20px;
-  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(60, 60, 60, 0.1);
 }
 
 .comment-respond .add-comment .comment-form input::placeholder,
@@ -5083,7 +5092,7 @@ ul li {
   padding: 40px 30px;
   margin-bottom: 40px;
   border-radius: 5px;
-  background: #f7ffe0;
+  background: #f8c9f0;
   /* background-color: #5a1592; */
 
 }
@@ -5157,8 +5166,10 @@ ul li {
   }
 }
 
+
 .shop-single .product-details .post-content h4 {
   margin-bottom: 10px;
+  color: #5a1592;
 }
 
 .shop-single .product-details .post-content h5 {
@@ -5408,9 +5419,9 @@ ul li {
 }
 
 .shop-single .review .review-content .review-showing .client-review {
-  background: #f2efc7;
-
+  background: #fff;
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 .shop-single .review .review-content .review-showing .client-review .review-form .review-title {
@@ -5436,9 +5447,9 @@ ul li {
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 25px;
-  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(60, 60, 60, 0.1);
   border: none;
-  color: #fff;
+  color: #000;
 }
 
 .shop-single .review .review-content .review-showing .client-review .review-form form input::placeholder {
@@ -5471,8 +5482,8 @@ ul li {
   padding: 15px;
   margin-bottom: 25px;
   border: none;
-  /* background: rgba(255, 255, 255, 0.1); */
-  color: #fff;
+  background: rgba(66, 65, 65, 0.1);
+  color: #000;
 }
 
 .shop-single .review .review-content .review-showing .client-review .review-form form textarea::placeholder {
@@ -5702,7 +5713,7 @@ ul li {
 
 .shop-product-wrap .product-item:hover .product-content h6 a,
 .shop-product-wrap .product-list-item:hover .product-content h6 a {
-  color: #df01ae;
+  color: #fff;
 }
 
 .shop-product-wrap .product-item .product-thumb,
@@ -5779,8 +5790,11 @@ ul li {
 
 .shop-product-wrap .product-item .product-content h6 a,
 .shop-product-wrap .product-list-item .product-content h6 a {
-  color: #fff;
+  color: #cfcfcf;
+  font-size: 15px;
 }
+
+
 
 .shop-product-wrap .product-item .product-content p,
 .shop-product-wrap .product-list-item .product-content p {
@@ -7234,6 +7248,7 @@ h6 {
 @media only screen and (min-width: 1400px) {
   p {
     font-size: 14px;
+    color: #000;
   }
 }
 
@@ -7335,6 +7350,7 @@ h6 {
 
 .single-blog .blog-images a img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .single-blog .blog-content {
@@ -7504,6 +7520,9 @@ h6 {
   border-color: #df01ae;
 }
 
+.btn-primary:hover {
+  background-color: #df01ae;
+}
 
 /* search */
 #btn--yp {
@@ -7635,7 +7654,7 @@ html {
   margin-right: -1.25em;
   border: none;
   padding: 0 1em;
-  width: 25em;
+  width: -1em;
   height: 3.25em;
   border-radius: 3.25em;
   transform: translate(var(--pos, 10em));
@@ -7669,7 +7688,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: right;
-  margin: 35px -134px -46px -1px;
+  margin: 35px 300px -46px -50px;
   min-width: 400px;
 }
 
@@ -8053,6 +8072,7 @@ element.style {
 
 .fw-bold {
   color: #000;
+  margin-top: 10px;
 }
 
 /* blog */
@@ -8224,4 +8244,168 @@ element.style {
   font-size: 15px;
   font-family: 'Playfair', serif;
   font-weight: bold;
+}
+
+/* comment */
+
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: rgba(0, 0, 0, 0.85);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+button:hover,
+button:focus,
+button:active {
+    cursor: pointer;
+    background-color: #ecf0f1;
+}
+.comment-thread {
+    width: 967px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 30px;
+    background-color: #fff;
+    border: 1px solid transparent; /* Removes margin collapse */
+    border-radius: 5px;
+    max-height: 400px;
+}
+.m-0 {
+    margin: 0;
+}
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Comment */
+
+.comment {
+    position: relative;
+    margin: 20px auto;
+}
+.comment-heading {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+}
+.comment-voting {
+    width: 20px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.comment-voting button {
+    display: block;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    border: 0;
+    font-size: 10px;
+}
+.comment-info {
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+.comment-author {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    text-decoration: none;
+}
+.comment-author:hover {
+    text-decoration: underline;
+}
+.replies {
+    margin-left: 20px;
+}
+
+/* Adjustments for the comment border links */
+
+.comment-border-link {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 12px;
+    height: calc(100% - 50px);
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+}
+.comment-border-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.comment-body {
+    padding: 0 20px;
+    padding-left: 28px;
+}
+.replies {
+    margin-left: 28px;
+}
+
+/* Adjustments for toggleable comments */
+
+details.comment summary {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+details.comment summary::-webkit-details-marker {
+    display: none;
+}
+details.comment:not([open]) .comment-heading {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.comment-heading::after {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    align-self: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.55);
+}
+details.comment[open] .comment-heading::after {
+    content: "Click to hide";
+}
+details.comment:not([open]) .comment-heading::after {
+    content: "Click to show";
+}
+
+/* Adjustment for Internet Explorer */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Resets cursor, and removes prompt text on Internet Explorer */
+    .comment-heading {
+        cursor: default;
+    }
+    details.comment[open] .comment-heading::after,
+    details.comment:not([open]) .comment-heading::after {
+        content: " ";
+    }
+}
+
+/* Styling the reply to comment form */
+
+.reply-form textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.d-none {
+    display: none;
 }

@@ -68,7 +68,9 @@ form.sign-in-form {
 
 .input-field {
   max-width: 380px;
+  max-height: 40px;
   width: 100%;
+
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 55px;
@@ -79,12 +81,15 @@ form.sign-in-form {
   position: relative;
 }
 
+
 .input-field i {
   text-align: center;
   line-height: 55px;
   color: #acacac;
   transition: 0.5s;
   font-size: 1.1rem;
+  margin-bottom: -12px;  
+  margin-top: -7px;  
 }
 
 .input-field input {
@@ -93,9 +98,10 @@ form.sign-in-form {
   border: none;
   line-height: 1;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 15px;
   color: #333;
   font-family: "Poppins", sans-serif;
+
 }
 .input-field select {
   background: none;
@@ -103,15 +109,16 @@ form.sign-in-form {
   border: none;
   line-height: 1;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 15px;
   color: #333;
-  width: 330px;
-  height: 55px;
+  width: 325px;
+  height: 40px;
   margin-left: -33px;
-  padding-left: 28px;
+  padding-left: 31px;
   border-radius: 20%;
   font-family: "Poppins", sans-serif;
-
+  padding-bottom: -2px;
+  padding-right: 10px;
 }
 
 
@@ -269,6 +276,7 @@ form.sign-in-form {
 .container.sign-up-mode form.sign-up-form {
   opacity: 1;
   z-index: 2;
+  display: flex;
 }
 
 .container.sign-up-mode form.sign-in-form {
@@ -346,6 +354,7 @@ form.sign-in-form {
   .panel p {
     font-size: 0.7rem;
     padding: 0.5rem 0;
+    z-index: -1;
   }
 
   .btn.transparent {
@@ -366,7 +375,7 @@ form.sign-in-form {
   }
 
   .container.sign-up-mode:before {
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 105%);
     bottom: 32%;
     right: initial;
   }
@@ -397,6 +406,7 @@ form.sign-in-form {
     padding: 0 1.5rem;
   }
 
+
   .image {
     display: none;
   }
@@ -423,5 +433,6 @@ form.sign-in-form {
 
 select option {
   color:#333;
-  
+  max-width: 100%;  
 }
+
