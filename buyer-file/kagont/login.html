@@ -9,6 +9,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Biểu-tượng-không-chữ1.png">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>F.E.M</title>
 </head>
 
@@ -18,13 +19,14 @@
       <div class="signin-signup">
         <form action="#" class="sign-in-form">
           <h2 class="title">Sign in</h2>
-          <div class="input-field">
+          <div class="input-field-signin">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Username" />
           </div>
-          <div class="input-field">
+          <div class="input-field-signin">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
+            <input id="pass"  type="password" placeholder="Password" />
+            <i onclick="show('pass')" class="fas fa-eye"></i>
           </div>
           <div style="display: flex;">
             <label style="margin-right: 100px;">
@@ -130,6 +132,6 @@
   </div>
 
   <script src="assets/js/app.js"></script>
-</body>
+</body >
 
-</html>
+</html >
